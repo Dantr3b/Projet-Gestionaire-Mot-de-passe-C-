@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/add.css">
+    <title>SafeGarage</title>
+</head>
+<body>
+    <div class="header">
+        <div class="name" id="SafeGarage"><h1>SafeGarage</h1></div>
+    </div>
+
+    <div class="title"><h2>Ajouter un Service</h2></div>
+
+    <main>
+        <div class="add-form">
+            <form novalidate action="add()" method="POST">
+                <div class="form-group">
+                    <label for="ServiceName">Service Name</label>
+                    <div class="input-container" id="ServiceNameInputContainer">
+                        <img src="assets/bxs-buildings.svg" alt="Service Icon" class="input-icon">
+                        <input type="text" name="ServiceName" id="ServiceName" placeholder="ex: google" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-container" id="UsernameInputContainer">
+                        <img src="assets/bxs-user.svg" alt="Username Icon" class="input-icon">
+                        <input type="text" name="username" id="username" placeholder="ex: Barbara" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group" id="password">
+                        <label for="password">Mot de passe</label>
+                        <div class="input-container" id="PasswordInputContainer">
+                            <img src="assets/bx-key.svg" alt="Key Icon" class="input-icon">
+                            <input type="password" name="password" id="passwordinput" placeholder="8 caractère minimum" autocomplete="off" required>
+                            <button type="button" class="generate-btn" id="generateRandomPassword">
+                                <img src="assets/bx-shuffle.svg" alt="Generate Icon">
+                            </button>
+                            <button type="button" class="toggle-btn" id="show">
+                                <img src="assets/bx-hide.svg" alt="Toggle Visibility Icon">
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="alertmessage" id="alertmessage"></div>
+                <div class="button"><button id="submitButton" type="submit">Ajouter</button></div>
+            </form>
+
+    </main>
+    
+</body>
+<script src="js/add.js"></script>
+</html>

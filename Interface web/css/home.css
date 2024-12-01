@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background-color: #1E1E1E;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007BFF
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #525252;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style de la barre de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #4f4f4f; /* Couleur de fond de la barre */
+    margin-top: 3%;
+    border-radius: 25px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement intérieur */
+    width: 500px; /* Largeur de la barre */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Optionnel : effet d'encadrement */
+  }
+  
+  /* Icône de recherche */
+  .search-icon {
+    font-size: 18px; /* Taille de l'icône */
+    color: #ffffff; /* Couleur de l'icône */
+    margin-right: 10px; /* Espacement entre l'icône et l'entrée */
+  }
+  
+  /* Champ de recherche */
+  .search-bar input {
+    flex: 1; /* Remplit l'espace restant */
+    border: none; /* Supprime les bordures */
+    background: transparent; /* Fond transparent */
+    color: #ffffff; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    outline: none; /* Supprime l'effet de focus par défaut */
+    font-family: Arial, sans-serif; /* Police lisible */
+  }
+  
+  /* Placeholder style */
+  .search-bar input::placeholder {
+    color: #d3d3d3; /* Couleur du placeholder */
+    font-size: 14px; /* Taille du placeholder */
+  }
+  
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.categories div{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius:  8px;
+    background-color: #4f4f4f;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.categorie4{
+    font-size: 0.7rem;
+}
+
+/* Style général du bouton */
+.add-button {
+    position: fixed;
+    bottom: 20px; /* Position verticale */
+    right: 20px; /* Position horizontale */
+    display: flex; /* Pour centrer le contenu */
+    align-items: center; /* Alignement vertical */
+    justify-content: center; /* Alignement horizontal */
+    width: 60px; /* Diamètre du bouton */
+    height: 60px; /* Diamètre du bouton */
+    background-color: #007BFF; /* Couleur bleu vif */
+    border-radius: 50%; /* Rend le bouton circulaire */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Change le curseur au survol */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Effet de transition */
+  }
+  
+  /* Effet au survol */
+  .add-button:hover {
+    transform: scale(1.1); /* Agrandir légèrement */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Accentuer l'ombre */
+  }
+  
+  /* Effet au clic */
+  .add-button:active {
+    transform: scale(0.95); /* Réduire légèrement au clic */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Réduire l'ombre */
+  }
+
+
+
+/* Table de mots de passe */
+.password-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  
+}
+
+
+
+.password-table th,
+.password-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  color: #ffffff;
+}
+
+.password-table td {
+  background-color: #3e3e3e;
+  vertical-align: middle;
+}
+
+#mdp{
+  text-align: center;
+}
+
+.password-table input[type="password"],
+.password-table input[type="text"] {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.password-table button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.password-table button img {
+  width: 24px;
+  height: 24px;
+}
+
+.password-table button:hover img {
+  opacity: 0.8;
+}
+
+/* Bouton d'ajout */
+.add-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.add-button img {
+  width: 48px;
+  height: 48px;
+}
+
+
+  
