@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "Gestionnaire_MDP_WEB.Controllers.PasswordsController",
+    "Method": "AddPassword",
+    "RelativePath": "api/Passwords/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Gestionnaire_MDP_WEB.AddPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gestionnaire_MDP_WEB.Controllers.PasswordsController",
+    "Method": "DeletePassword",
+    "RelativePath": "api/Passwords/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gestionnaire_MDP_WEB.Controllers.PasswordsController",
+    "Method": "GetPassword",
+    "RelativePath": "api/Passwords/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gestionnaire_MDP_WEB.Controllers.PasswordsController",
+    "Method": "GetMultiplePasswords",
+    "RelativePath": "api/Passwords/multiple",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
